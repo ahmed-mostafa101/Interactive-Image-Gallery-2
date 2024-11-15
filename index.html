@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Interactive Image Gallery</title>
-      <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
+      <h1 class="gallery-heading">Interactive Image Gallery</h1>
       <div class="gallery" id="gallery"></div>
-      <div class="scroll-btns">
+      <div class="scroll-btns larg">
+        <button class="prev" onclick="scrollGallery(-1)">&#8249;</button>
+        <button class="next" onclick="scrollGallery(1)">&#8250;</button>
+      </div>
+      <div class="scroll-btns small">
         <button class="prev" onclick="scrollGallery(-1)">&#8249; Prev</button>
         <button class="next" onclick="scrollGallery(1)">Next &#8250;</button>
       </div>
@@ -18,6 +26,7 @@
     <div class="modal" id="modal">
       <button class="modal-nav left" onclick="changeImage(-1)">&#8249;</button>
       <img id="modal-image" src="" alt="Enlarged view">
+      <div class="caption" id="caption"></div>
       <button class="modal-nav right" onclick="changeImage(1)">&#8250;</button>
       <button class="close" onclick="closeModal()">&#10006;</button>
     </div> 

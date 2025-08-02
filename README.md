@@ -1,4 +1,4 @@
-# Interactive Image Gallery
+# Interactive Image Gallery 
 
 ![image](https://github.com/user-attachments/assets/46647991-7eb3-42cc-b884-82aaada52fec)
 
